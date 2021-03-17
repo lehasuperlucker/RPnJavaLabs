@@ -1,7 +1,7 @@
 package Planes;
 
-public class PassengerPlane extends Airplane{
-    private int numberOfStewardess;
+public class PassengerPlane extends Airplane{ // класс пассажирского самолёта
+    private int numberOfStewardess; // целое число стюардесс, хех)
 
     public PassengerPlane(int capacity, int carryingCapacity, int rangeOfFlight, int fuelConsumption,
                           int numberOfStewardess) {
@@ -11,11 +11,12 @@ public class PassengerPlane extends Airplane{
 
     public int getNumberOfStewardess() {
         return numberOfStewardess;
-    }
+    } // возвращает число стюардесс
 
     public void setNumberOfStewardess(int numberOfStewardess) {
         this.numberOfStewardess = numberOfStewardess;
     }
+    //задаёт число стюардесс
 
     @Override
     public String toString() {

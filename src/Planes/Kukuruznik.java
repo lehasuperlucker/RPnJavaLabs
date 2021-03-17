@@ -1,9 +1,10 @@
 package Planes;
 
 
-public class Kukuruznik extends Airplane
+public class Kukuruznik extends Airplane // данный класс кукурузника тоже наследуется от абстрактного класса самолёта
 {
-    private int propellerLength;
+    private int propellerLength;// не смог придумать какого-то свойства кукурузника,
+    // которого нет у абстрактного самолёта, но у кукурузников же есть пропеллеры, поэтому я ебанул длинну лопасти))
 
     public Kukuruznik(int capacity, int carryingCapacity, int rangeOfFlight, int fuelConsumption, int propellerLength) {
         super(capacity, carryingCapacity, rangeOfFlight, fuelConsumption);
@@ -34,9 +35,9 @@ public class Kukuruznik extends Airplane
 
     public int getPropellerLength() {
         return propellerLength;
-    }
+    } //возвращает длину пропеллера
 
     public void setPropellerLength(int propellerLength) {
         this.propellerLength = propellerLength;
-    }
+    }//задаёт длинну пропеллера
 }
